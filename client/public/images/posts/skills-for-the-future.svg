@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 160) rotate(35) scale(560 390)">
+      <stop stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 140) rotate(130) scale(560 390)">
+      <stop stop-color="#38BDF8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="260" y1="240" x2="940" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#g1)"/>
+  <rect width="1200" height="800" fill="url(#g2)"/>
+
+  <g opacity="0.9">
+    <path d="M280 590C280 561.386 303.386 538 332 538H868C896.614 538 920 561.386 920 590V610C920 638.614 896.614 662 868 662H332C303.386 662 280 638.614 280 610V590Z" stroke="rgba(226,232,240,0.25)" stroke-width="10"/>
+    <path d="M340 610H860" stroke="rgba(226,232,240,0.25)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M360 520V360C360 332.386 382.386 310 410 310H790C817.614 310 840 332.386 840 360V520" stroke="url(#stroke)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M420 520V420" stroke="rgba(52,211,153,0.9)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M520 520V380" stroke="rgba(56,189,248,0.9)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M620 520V450" stroke="rgba(167,139,250,0.8)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M720 520V400" stroke="rgba(52,211,153,0.7)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M420 540C500 450 600 500 680 440C740 395 790 410 840 360" stroke="rgba(226,232,240,0.45)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
+

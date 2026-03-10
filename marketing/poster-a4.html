@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowYourself - Poster (A4)</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      :root {
+        --bg: #020617; /* slate-950 */
+        --text: #e2e8f0; /* slate-200 */
+        --muted: rgba(226, 232, 240, 0.72);
+        --border: rgba(255, 255, 255, 0.12);
+        --card: rgba(255, 255, 255, 0.06);
+        --sky: #38bdf8;
+        --violet: #a78bfa;
+        --emerald: #34d399;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #0b1220;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+          "Noto Sans Khmer", "Khmer OS System", sans-serif;
+        color: var(--text);
+      }
+
+      /* A4 poster */
+      .page {
+        width: 210mm;
+        height: 297mm;
+        background: var(--bg);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glow {
+        position: absolute;
+        inset: -30mm;
+        background:
+          radial-gradient(1200px 700px at 18% 10%, rgba(56, 189, 248, 0.25), transparent 60%),
+          radial-gradient(1100px 700px at 88% 18%, rgba(167, 139, 250, 0.22), transparent 58%),
+          radial-gradient(900px 600px at 50% 110%, rgba(52, 211, 153, 0.12), transparent 60%);
+        filter: blur(0px);
+        pointer-events: none;
+      }
+
+      .content {
+        position: relative;
+        height: 100%;
+        padding: 18mm;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: 14mm;
+      }
+
+      .top {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 10mm;
+        align-items: start;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(167, 139, 250, 0.25));
+        box-shadow: 0 16px 50px -30px rgba(56, 189, 248, 0.6);
+      }
+
+      .brand-name {
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-size: 18px;
+      }
+
+      .brand-name .accent {
+        color: var(--sky);
+      }
+
+      .chip-row {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        font-size: 12px;
+        color: rgba(226, 232, 240, 0.9);
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      h1 {
+        margin: 14px 0 0;
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .subtitle {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .cta {
+        margin-top: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, rgba(56, 189, 248, 0.16), rgba(255, 255, 255, 0.06));
+        width: fit-content;
+      }
+
+      .cta strong {
+        color: #eaf7ff;
+        font-size: 13px;
+      }
+
+      .cta span {
+        color: rgba(226, 232, 240, 0.8);
+        font-size: 13px;
+      }
+
+      .qr {
+        width: 70mm;
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10mm;
+      }
+
+      .qr-box {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 14px;
+        border: 1px dashed rgba(226, 232, 240, 0.35);
+        display: grid;
+        place-items: center;
+        color: rgba(226, 232, 240, 0.8);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .qr-help {
+        margin-top: 10px;
+        font-size: 12px;
+        color: rgba(226, 232, 240, 0.75);
+        line-height: 1.35;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-content: start;
+      }
+
+      .card {
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        padding: 14px;
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 13px;
+        letter-spacing: 0.01em;
+      }
+
+      .card p {
+        margin: 8px 0 0;
+        color: rgba(226, 232, 240, 0.72);
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+
+      .mid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .foot {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 8mm;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .foot .left {
+        display: grid;
+        gap: 6px;
+      }
+
+      .url {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .small {
+        color: rgba(226, 232, 240, 0.68);
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        font-size: 12px;
+        color: rgba(226, 232, 240, 0.82);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--sky);
+        box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.12);
+      }
+
+      /* Print helper: hide gray page background */
+      @media print {
+        body {
+          background: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="glow"></div>
+      <div class="content">
+        <section class="top">
+          <div>
+            <div class="brand">
+              <div class="logo" aria-hidden="true"></div>
+              <div>
+                <div class="brand-name">
+                  Know<span class="accent">Yourself</span> / FindYourPath
+                </div>
+                <div class="chip-row">
+                  <span class="chip">For Students</span>
+                  <span class="chip">Cambodia</span>
+                  <span class="chip">Khmer + English</span>
+                </div>
+              </div>
+            </div>
+
+            <h1>
+              Self Discovery & Career Guidance
+              <br />
+              ស្វែងយល់ខ្លួនឯង និងណែនាំអាជីព
+            </h1>
+            <div class="subtitle">
+              Take a short self-discovery test, explore majors, and follow career roadmaps.
+              <br />
+              ធ្វើតេស្តខ្លីៗ ស្វែងរកមុខជំនាញ និងតាមដានជំហានផែនទីអាជីពដែលសមនឹងអ្នក។
+            </div>
+
+            <div class="cta">
+              <strong>Start now</strong>
+              <span>• Take the test • View results • Save dashboard</span>
+            </div>
+          </div>
+
+          <aside class="qr">
+            <div class="qr-box">QR CODE</div>
+            <div class="qr-help">
+              Replace this box with your QR (link to the website).<br />
+              ប្តូរប្រអប់នេះជាមួយ QR (តំណទៅគេហទំព័រ)។
+            </div>
+          </aside>
+        </section>
+
+        <section class="mid">
+          <div class="grid">
+            <div class="card">
+              <h3>Self Test • តេស្ត</h3>
+              <p>20 questions to find your interests and personality style.</p>
+            </div>
+            <div class="card">
+              <h3>Majors • មុខជំនាញ</h3>
+              <p>Skills required + career opportunities for each major.</p>
+            </div>
+            <div class="card">
+              <h3>Roadmaps • ផែនទីអាជីព</h3>
+              <p>Step-by-step learning plan to start your career path.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <h3>Experiences • បទពិសោធន៍</h3>
+              <p>Share real stories: what is hard and how students succeed.</p>
+            </div>
+            <div class="card">
+              <h3>Blog • អត្ថបទណែនាំ</h3>
+              <p>Guides: choosing majors, future skills, and study tips.</p>
+            </div>
+            <div class="card">
+              <h3>Account • គណនី</h3>
+              <p>Login to save test results and track your progress.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="foot">
+          <div class="left">
+            <div class="url">http://localhost:5173</div>
+            <div class="small">
+              Demo link shown above. Replace with your real domain later.<br />
+              តំណសាកល្បងខាងលើ។ បន្ទាប់មកអាចប្តូរទៅដូមែនពិត។
+            </div>
+          </div>
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Know yourself • Find skills • Find a career</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+

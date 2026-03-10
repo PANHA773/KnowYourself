@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 120) rotate(35) scale(520 340)">
+      <stop stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 170) rotate(130) scale(520 360)">
+      <stop stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="200" y1="220" x2="1000" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#g1)"/>
+  <rect width="1200" height="800" fill="url(#g2)"/>
+
+  <g opacity="0.75">
+    <path d="M220 330C220 302.386 242.386 280 270 280H930C957.614 280 980 302.386 980 330V560C980 587.614 957.614 610 930 610H270C242.386 610 220 587.614 220 560V330Z" stroke="url(#stroke)" stroke-width="10"/>
+    <path d="M370 650H830" stroke="rgba(226,232,240,0.55)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M520 610V650" stroke="rgba(226,232,240,0.55)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M680 610V650" stroke="rgba(226,232,240,0.55)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.85">
+    <path d="M360 395H470" stroke="rgba(226,232,240,0.72)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M360 445H540" stroke="rgba(226,232,240,0.55)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M360 495H505" stroke="rgba(226,232,240,0.55)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M660 410L740 490L860 370" stroke="rgba(56,189,248,0.9)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g opacity="0.35">
+    <circle cx="240" cy="680" r="6" fill="rgba(226,232,240,0.8)"/>
+    <circle cx="290" cy="680" r="6" fill="rgba(226,232,240,0.8)"/>
+    <circle cx="340" cy="680" r="6" fill="rgba(226,232,240,0.8)"/>
+  </g>
+</svg>
+
