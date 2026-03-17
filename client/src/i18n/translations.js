@@ -23,6 +23,18 @@
     "home.exploreMajors": "Explore Majors",
     "home.featuredCareers": "Featured careers",
     "home.seedHint": "Seed data not loaded yet. Run the server seed script to see careers here.",
+    "home.tutorialTitle": "How it works",
+    "home.tutorialSubtitle": "A simple animated walkthrough to guide your journey.",
+    "home.tutorialSteps": "{n} steps",
+    "home.tutorialTag": "Animated tutorial",
+    "home.tutorial.step1.title": "Take the self test",
+    "home.tutorial.step1.text": "Answer quick questions to discover your interests and personality.",
+    "home.tutorial.step2.title": "Explore majors",
+    "home.tutorial.step2.text": "See skills, subjects, and career opportunities for each major.",
+    "home.tutorial.step3.title": "Follow a roadmap",
+    "home.tutorial.step3.text": "Learn step-by-step skills and build projects to grow.",
+    "home.tutorial.step4.title": "Save your progress",
+    "home.tutorial.step4.text": "Track results and revisit recommendations in your dashboard.",
 
     "about.title": "About KnowYourself",
     "about.text":
@@ -353,6 +365,18 @@
     "home.exploreMajors": "ស្វែងរកមុខជំនាញ",
     "home.featuredCareers": "អាជីពដែលបានណែនាំ",
     "home.seedHint": "មិនទាន់មានទិន្នន័យគំរូទេ។ សូមរត់ស្គ្រីប seed នៅ server ដើម្បីឃើញអាជីពនៅទីនេះ។",
+    "home.tutorialTitle": "របៀបដំណើរការ",
+    "home.tutorialSubtitle": "ការណែនាំខ្លីៗមានចលនា ដើម្បីនាំអ្នកទៅកាន់ផ្លូវអាជីព។",
+    "home.tutorialSteps": "{n} ជំហាន",
+    "home.tutorialTag": "ការណែនាំមានចលនា",
+    "home.tutorial.step1.title": "ធ្វើតេស្តស្វែងយល់ខ្លួនឯង",
+    "home.tutorial.step1.text": "ឆ្លើយសំណួរខ្លីៗ ដើម្បីស្គាល់ចំណូលចិត្ត និងលក្ខណៈរបស់អ្នក។",
+    "home.tutorial.step2.title": "ស្វែងរកមុខជំនាញ",
+    "home.tutorial.step2.text": "មើលជំនាញ មុខវិជ្ជា និងឱកាសអាជីពសម្រាប់មុខជំនាញនីមួយៗ។",
+    "home.tutorial.step3.title": "តាមដានផែនទីអាជីព",
+    "home.tutorial.step3.text": "រៀនជំហានជាបន្តបន្ទាប់ និងបង្កើតគម្រោងដើម្បីអភិវឌ្ឍខ្លួន។",
+    "home.tutorial.step4.title": "រក្សាទុកការរីកចម្រើន",
+    "home.tutorial.step4.text": "តាមដានលទ្ធផល និងមើលការណែនាំឡើងវិញក្នុងផ្ទាំងគ្រប់គ្រង។",
 
     "about.title": "អំពី KnowYourself",
     "about.text":
@@ -659,6 +683,9 @@
     "footer.copyright": "© {year} KnowYourself។ រក្សាសិទ្ធិគ្រប់យ៉ាង។"
   }
 };
+
+
+
 
 
 
